@@ -692,24 +692,6 @@ export default function MentalHealthPortal() {
                 <Card>
                   <CardHeader>
                     <CardTitle className="font-heading flex items-center gap-2">
-                      <Zap className="w-5 h-5" /> Quick Actions
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="grid grid-cols-1 gap-2">
-                    <Button variant="outline" onClick={() => setActiveTab("mood")} className="hover:bg-transparent">
-                      New Mood Entry
-                    </Button>
-                    <Button variant="outline" onClick={() => setActiveTab("assessment")} className="hover:bg-transparent">
-                      Take an Assessment
-                    </Button>
-                    <Button variant="outline" onClick={() => setActiveTab("resources")} className="hover:bg-transparent">
-                      View Resources
-                    </Button>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="font-heading flex items-center gap-2">
                       <Target className="w-5 h-5" /> Wellness Goals
                     </CardTitle>
                   </CardHeader>
@@ -925,7 +907,7 @@ export default function MentalHealthPortal() {
                     <div className="grid gap-3">
                       {[
                         { name: "Guided Breathing", sound: "/sounds/breathing.mp3", icon: <Brain className="w-6 h-6 text-blue-300" /> },
-                        { name: "Yoga Stretch", sound: "/sounds/yoga.mp3", icon: <Zap className="w-6 h-6 text-green-300" /> },
+                        { name: "Stretch", sound: "/sounds/yoga.mp3", icon: <Zap className="w-6 h-6 text-green-300" /> },
                         { name: "Mindful Walking", sound: "/sounds/walking.mp3", icon: <Heart className="w-6 h-6 text-purple-300" /> },
                        
                       ].map((activity, idx) => (
@@ -1074,7 +1056,7 @@ export default function MentalHealthPortal() {
                       <div className="font-semibold">National Suicide Prevention Lifeline</div>
                       <div className="text-sm text-muted-foreground">24/7 Crisis Support</div>
                     </div>
-                    <Button size="sm" className="hover:bg-primary/90">Call 988</Button>
+                    <Button size="sm" className="hover:bg-primary/90">Call 14416</Button>
                   </div>
                   <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
                     <div>
